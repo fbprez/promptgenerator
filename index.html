@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Prompt Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cinematic Video Prompt Generator</h1>
+        <form id="prompt-form">
+            <!-- Scene Context -->
+            <label for="scene">Scene Context:</label>
+            <input type="text" id="scene" placeholder="Describe the scene context...">
+            
+            <!-- Character Description -->
+            <label for="character">Character Description:</label>
+            <input type="text" id="character" placeholder="Describe characters...">
+            
+            <!-- Narrative Movement -->
+            <label for="movement">Narrative Movement:</label>
+            <input type="text" id="movement" placeholder="Describe the actions...">
+            
+            <!-- Camera Work -->
+            <label for="camera">Camera Work:</label>
+            <input type="text" id="camera" placeholder="Describe camera angles...">
+            
+            <!-- Sound & Music -->
+            <label for="sound">Sound & Music:</label>
+            <input type="text" id="sound" placeholder="Describe the audio atmosphere...">
+            
+            <!-- Color Grading and Tone -->
+            <label for="color">Color Grading and Tone:</label>
+            <input type="text" id="color" placeholder="Describe the visual tone...">
+            
+            <!-- Special Effects -->
+            <label for="effects">Special Effects (optional):</label>
+            <input type="text" id="effects" placeholder="Any special effects...">
+
+            <!-- Submit button -->
+            <button type="button" onclick="generatePrompt()">Generate Prompt</button>
+        </form>
+
+        <!-- Prompt Preview Section -->
+        <div id="prompt-preview">
+            <h2>Your Generated Prompt:</h2>
+            <p id="output"></p>
+            <button onclick="copyToClipboard()">Copy Prompt</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
